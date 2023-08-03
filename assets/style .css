@@ -22,11 +22,11 @@ main.content {
 .searchBar {
   flex: 1 0 1;
   padding: 10px;
-  border: 5px solid black; }
-
+  border: 5px solid black;
+}
 
 .searchBar h2 {
- padding-left: 10px;
+  padding-left: 10px;
 }
 
 form {
@@ -60,14 +60,25 @@ input {
   text-align: center;
 }
 
+.future {
+  display: flex;
+  justify-content: center;
+}
+
+.forecast-container {
+  flex: 1; 
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
 .weather-card {
+  flex: 1; 
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
-  margin: 10px;
-}
-
-.weather-card img {
-  width: 50px;
-  height: 50px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
