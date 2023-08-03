@@ -122,7 +122,16 @@ function displaySearchHistory() {
     searchHistory.forEach((city) => {
         const listItem = document.createElement('li');
         listItem.classList.add('city-in-history');
-        listItem.textContent = city;
+
+        // Create a clickable button for each city
+        const cityButton = document.createElement('button');
+        cityButton.textContent = city;
+        cityButton.classList.add('city-button');
+        cityButton.addEventListener('click', () => {
+            getWeatherData(city); 
+        });
+
+        listItem.appendChild(cityButton);
         searchHistoryElement.appendChild(listItem);
     });
 }
