@@ -22,9 +22,9 @@ function getWeatherData(city) {
                         <div class="weather-card">
                             <h3>${cityName} - ${date}</h3>
                             <img src="${weatherIcon}" alt="${data.weather[0].description}">
-                            <p>Temperature: ${temperatureFahrenheit} °f</p>
+                            <p>Temperature: ${temperatureFahrenheit.toFixed(2)} °f</p>
                             <p>Humidity: ${humidity}%</p>
-                            <p>Wind Speed: ${windSpeedMilesPerHour} mph</p>
+                            <p>Wind Speed: ${windSpeedMilesPerHour.toFixed(2)} mph</p>
                         </div>
                     `;
 
